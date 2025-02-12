@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg text-center">
+        <h1 class="text-2xl font-bold mb-4">Text to Image</h1>
+        <p>It may take 6 Minutes or more to generate 12 images at a time</p>
+        <textarea id="newsInput" class="w-full p-2 text-gray-900 rounded-md" rows="4" placeholder="Paste news text here..."></textarea>
+        <button onclick="analyzeText()" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+           Generate Image
+        </button>
+        <div id="result" class="mt-4 text-lg"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
